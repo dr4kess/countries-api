@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { selectCountries, selectSearchTerm } from '../../../store/slices/app.slices';
-import { filteredCountries } from '../../../helpers/countries.helpers';
+import { selectCountries, selectSearchTerm, setSearchTerm } from '../../../store/slices/app.slices';
+import { filteredCountries } from '../../../helpers/app.helpers'
 
 import s from './CountriesListDesktop.module.scss'
 
