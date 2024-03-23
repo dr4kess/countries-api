@@ -1,0 +1,31 @@
+.errorWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.errorImage{
+    height: 25rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 730px) {
+        height: 20rem;
+    }
+}
+
+.errorButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 10rem;
+    background-color: #BFAFF2;
+    font-family: 'Poppins';
+    font-size: 18px;
+    border-radius: 15px;
+    margin-left: 2rem;
+    @media screen and (max-width: 1020px) {
+        width: 8rem;
+    }
+}

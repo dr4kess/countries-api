@@ -1,0 +1,113 @@
+.hero{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 900px) {
+        height: 65vh;
+    }
+    @media screen and (max-width: 730px) {
+        height: 100%;
+    }
+}
+
+.column{
+    height: 90%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 2px solid #333333;
+    @media screen and (max-width: 730px) {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.aboutSide{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: center;
+    @media screen and (max-width: 730px) {
+        align-items: center;
+    }
+}
+
+.title{
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: white;
+    margin-block-end: 0;
+    @media screen and (max-width: 1020px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 1020px) {
+        font-size: 35px;
+    }
+    @media screen and (max-width: 730px) {
+        text-align: center;
+    }
+}
+
+.about{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #858585;
+    width: 70%;
+    margin: 7% 0;
+    @media screen and (max-width: 1020px) {
+        font-size: 14px;
+        margin: 5% 0;
+    }
+}
+
+.imageSide{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    @media screen and (max-width: 730px) {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
+.imageWrapper{
+    height: fit-content;
+    width: fit-content;
+    object-fit: scale-down;
+    background-color: #333333;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1020px) {
+        width: 90%;
+    }
+}
+
+.image{
+    width: 100%;
+    @media screen and (max-width: 1020px) {
+        width: 90%;
+    }
+}
+
+.getStartedButton{
+    display: flex;
+    height: 3rem;
+    width: 9.5rem;
+    background-color: #F8D57E;
+    font-family: 'Poppins';
+    font-size: 16px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1020px) {
+        width: 8.5rem;
+        font-size: 14px;
+    }
+}

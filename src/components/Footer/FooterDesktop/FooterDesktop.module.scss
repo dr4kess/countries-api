@@ -1,0 +1,150 @@
+.footer{
+    position: static;
+    display: flex;
+    justify-content: center;
+    height: 18vh;
+    width: 100vw;
+
+}
+
+.column{
+    width: 96%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 55% 45%;
+    }
+}
+
+.infoSide{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    @media screen and (max-width: 900px) {
+        grid-template-rows: 50% 50%;
+    }
+}
+
+.logoWrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    width: 3rem;
+    height: 3rem;
+    @media screen and (max-width: 1020px) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+.miniLogoWrapper{
+    display: flex;
+    margin-right: 2%;
+    justify-content: space-between;
+
+}
+
+.miniLogo{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.1rem;
+    @media screen and (max-width: 1020px) {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+.infoSectionsWrapper{
+    display: flex;
+    column-gap: 1%;
+
+}
+
+.infoSection{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+    margin: 0 1% 0 0;
+    cursor: pointer;
+    @media screen and (max-width: 1020px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 940px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 13px;
+    }
+}
+
+.updatesSide{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    justify-content: end;
+    @media screen and (max-width: 900px) {
+        grid-template-rows: 20% 80%;
+    }
+    @media screen and (max-width: 730px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.updatesText{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+    margin: 0 1% 0 0;
+    @media screen and (max-width: 1020px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 940px) {
+        font-size: 15px;
+    }
+}
+
+.searchSection{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search{
+    width: 18rem;
+    height: 3rem;
+    background-color: #333333;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    color: #858585;
+    padding-left: 5%;
+    @media screen and (max-width: 1020px) {
+        width: 15rem;
+    }
+    @media screen and (max-width: 900px) {
+        width: 12rem;
+    }
+}
+
+.searchButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 10rem;
+    background-color: #BFAFF2;
+    font-family: 'Poppins';
+    font-size: 18px;
+    border-radius: 15px;
+    margin-left: 2rem;
+    @media screen and (max-width: 1020px) {
+        width: 8rem;
+    }
+    @media screen and (max-width: 900px) {
+        width: 6rem;
+    }
+}

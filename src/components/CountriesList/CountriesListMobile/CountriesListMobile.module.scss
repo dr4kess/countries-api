@@ -1,0 +1,44 @@
+.countriesList{
+    position: relative;
+    background-color: white;
+    width: 96%;
+    height: 20rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 2% 0;
+    border-radius: 15px;
+}
+
+.list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countryItem{
+    display: flex;
+    list-style-type: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 90%;
+    padding-left: 2%;
+    border-radius: 15px;
+    align-items: center;
+    text-wrap: nowrap;
+    min-height: 5rem;
+
+    &:active{
+        background-color: #BFAFF2;
+    }
+}
+
+.noMatch{
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto';
+    height: 5rem;
+    padding-top: 2%;
+}

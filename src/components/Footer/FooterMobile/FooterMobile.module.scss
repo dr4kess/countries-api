@@ -1,0 +1,97 @@
+.footer{
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.column{
+    width: 96%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.infoSide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoWrapper{
+    height: fit-content;
+    width: fit-content;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+.miniLogoWrapper{
+    display: flex;
+    margin-right: 2%;
+}
+
+.miniLogo{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.infoSectionsWrapper{
+    display: flex;
+    column-gap: 1%;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.infoSection{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 18px;
+    margin: 0 1% 0 0;
+    cursor: pointer;
+}
+
+.updatesSide{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.updatesText{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+    margin: 0 1% 0 0;
+}
+
+.searchSection{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.search{
+    width: 12rem;
+    height: 3rem;
+    background-color: #333333;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    color: #858585;
+    padding-left: 5%;
+}
+
+.searchButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 6rem;
+    background-color: #BFAFF2;
+    font-family: 'Poppins';
+    font-size: 18px;
+    border-radius: 15px;
+    margin-left: 2rem;
+}
