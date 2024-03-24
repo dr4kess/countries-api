@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { setIsSearching, setSearchTerm } from '../../../store/slices/app.slices'
-import { getCountriesThunk } from '../../../store/thunks/countries.thunk'
 
 import image from '../../../assets/images/hero-image.png'
 
@@ -12,10 +11,6 @@ import s from './Hero.module.scss'
 const Hero = () => {
 
     const dispatch= useDispatch()
-
-    useEffect(() => {
-        dispatch(getCountriesThunk())
-    }, [])
 
     useEffect(() => {
         dispatch(setSearchTerm(''))

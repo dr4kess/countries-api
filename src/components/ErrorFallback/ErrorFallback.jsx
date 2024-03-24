@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useEffect }  from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import errorImage from '../../assets/images/error-image.png'
@@ -7,6 +7,10 @@ import s from './ErrorFallback.module.scss'
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log('error', error)
+  })
 
   const handleTryAgain = () => {
     resetErrorBoundary();

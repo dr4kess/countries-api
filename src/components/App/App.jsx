@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import React, { Suspense, useEffect } from 'react';
 import { ErrorBoundary } from "react-error-boundary";
 
+import { getCountriesThunk } from '../../store/thunks/countries.thunk';
 import { setIsMobile } from '../../store/slices/app.slices';
 
 import ErrorFallback from '../ErrorFallback/ErrorFallback';
@@ -23,6 +24,11 @@ const App = () => {
     const isMobile = useMediaQuery({
         query: '(max-width: 900px)',
       });
+
+
+    useEffect(() => {
+        dispatch(getCountriesThunk())
+    }, [])
 
     useEffect(() => {
         dispatch(setIsMobile(isMobile));
