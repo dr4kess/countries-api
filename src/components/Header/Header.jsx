@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
-import { selectCountries, selectIsMobile, selectIsSearching, selectSearchTerm, setIsSearching, setSearchTerm } from '../../store/slices/app.slices'
+import { selectIsMobile } from '../../store/slices/app.slices'
+import { selectSearchTerm, setSearchTerm, selectIsSearching, setIsSearching } from '../../store/slices/search.slices'
 
 import CountriesList from '../CountriesList/CountriesList'
 
@@ -16,7 +17,6 @@ const Header = () => {
     const isMobile = useSelector(selectIsMobile)
     const searchTerm = useSelector(selectSearchTerm)
     const isSearching = useSelector(selectIsSearching)
-    const countries = useSelector(selectCountries)
   
     const handleSearchChange = (e) => {
         const value = e.target.value;

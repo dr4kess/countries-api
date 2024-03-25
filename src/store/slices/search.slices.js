@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   isSearching: false,
   filteredCountries: null,
+  searchTerm: '',
 };
 
 export const searchSlice = createSlice({
@@ -11,17 +12,22 @@ export const searchSlice = createSlice({
   reducers: {
     setIsSearching: (state, action) => {
       state.isSearching = action.payload;
+      console.log(action.payload, 'action.payload')
     },
     setFilteredCountries: (state, action) => {
       state.filteredCountries = action.payload;
+    },
+    setSearchTerm: (state, action) => {
+      state.searchTerm = action.payload;
     }
   },
 });
 
-export const {setFilteredCountries, setIsSearching } = searchSlice.actions;
+export const {setFilteredCountries, setIsSearching, setSearchTerm} = searchSlice.actions;
 
-export const selectFilteredCountries = (state) => state.app.filteredCountries;
-export const selectIsSearching = (state) => state.app.isSearching;
+export const selectFilteredCountries = (state) => state.search.filteredCountries;
+export const selectIsSearching = (state) => state.search.isSearching;
+export const selectSearchTerm = (state) => state.search.searchTerm;
 
 
 export default searchSlice.reducer;

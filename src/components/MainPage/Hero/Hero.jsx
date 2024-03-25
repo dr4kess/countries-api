@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { setIsSearching, setSearchTerm } from '../../../store/slices/app.slices'
+import { setSearchTerm, setIsSearching } from '../../../store/slices/search.slices'
 
 import image from '../../../assets/images/hero-image.png'
 

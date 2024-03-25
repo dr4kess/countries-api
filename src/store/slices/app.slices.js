@@ -6,8 +6,6 @@ const initialState = {
   isMobile: null,
   isError: false,
   countries: null,
-  searchTerm: '',
-  isSearching: false
 };
 
 export const appSlices = createSlice({
@@ -26,12 +24,6 @@ export const appSlices = createSlice({
     setCountries: (state, { payload }) => {
       state.isLoading = payload;
     },
-    setSearchTerm: (state, { payload }) => {
-      state.searchTerm = payload;
-    },
-    setIsSearching: (state, { payload }) => {
-      state.isSearching = payload;
-    },
   },
   extraReducers: countriesExtraReducer,
 });
@@ -42,8 +34,6 @@ export const {
   setIsMobile,
   setIsError,
   setCountries,
-  setSearchTerm,
-  setIsSearching
 } = appSlices.actions;
 
 // SELECTORS
@@ -51,7 +41,5 @@ export const selectIsLoading = (state) => state.app.isLoading;
 export const selectCountries = (state) => state.app.countries;
 export const selectIsMobile = (state) => state.app.isMobile;
 export const selectIsError = (state) => state.app.error;
-export const selectSearchTerm = (state) => state.app.searchTerm;
-export const selectIsSearching = (state) => state.app.isSearching;
 
 export default appSlices.reducer;

@@ -2,7 +2,8 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectCountries, setIsSearching, setSearchTerm } from '../../../store/slices/app.slices';
+import { selectCountries } from '../../../store/slices/app.slices';
+import { setSearchTerm, setIsSearching } from '../../../store/slices/search.slices';
 import { formatCurrencies } from '../../../helpers/app.helpers';
 
 import s from './CountryDetails.module.scss'

@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectCountries, selectSearchTerm, setIsSearching, setSearchTerm } from '../../../store/slices/app.slices';
+import { selectCountries } from '../../../store/slices/app.slices';
+import { selectSearchTerm, setSearchTerm, setIsSearching } from '../../../store/slices/search.slices';
 import { filteredCountries } from '../../../helpers/app.helpers'
 
 import s from './CountriesListMobile.module.scss'
